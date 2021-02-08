@@ -1,0 +1,55 @@
+.post-container {
+    float: right;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    width: 80%;
+    background: #0e0b16;
+    border-left: 2px solid #fff;
+    overflow-y: scroll;
+}
+
+.post-card::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.post-card::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.post-card {
+    border-bottom: 2px solid #fff;
+}
+
+.img-card {
+    width: 100px;
+    height: 100px;
+    background: #e54;
+    margin:40px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+.text-card {
+    float: left;
+    margin-left: 30px;
+}
+.data {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.text-card p {
+    font-size: 1.2em;
+    font-family: Helvetica, Arial;
+}

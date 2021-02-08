@@ -1,0 +1,64 @@
+.sidebar {
+    width: 20%;
+    background: #373737;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.sidebar-container {
+    margin:0 auto; 
+    text-align: center;   
+}
+
+.welcome h2 {
+    margin-bottom: 5px;
+    font-size: 1.625em;
+}
+.welcome h3 {
+    margin-bottom: 40px;
+    font-size: 1.1875em;
+    font-weight:  none;
+}
+.presentation {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 300px;
+    white-space: normal
+}
+
+.contact-container {
+    padding: 5px;
+    margin: 30px auto;
+}
+.contact-container::after, .contact-container::before {
+    display: table;
+    content: '';
+    clear: both;
+}
+.contact-container img {
+    margin: 10px;
+}
+.contact-item:hover {
+    color: aqua;
+}
+
+.logo-link {
+    margin: 6px;
+}
+.sidenav {
+    margin-top: 50px;
+}
+.sidenav a {
+    text-decoration: none;
+    font-size: 1.1875em;
+    color: #ccc;
+}
+.sidenav a:hover {
+    color: #e54;
+    transition: 0.3s;
+}
+.sidenav a:active {
+    color: #e54;
+}
