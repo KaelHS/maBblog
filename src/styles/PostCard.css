@@ -31,10 +31,12 @@
 .text-card {
     float: left;
     margin-left: 30px;
+    color: #fff;
 }
 .data {
     margin-top: 20px;
     margin-bottom: 10px;
+    
 }
 .titulo {
     font-family: monospace;

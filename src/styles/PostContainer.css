@@ -1,0 +1,10 @@
+.post-container {
+    float: right;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    width: 80%;
+    background: #0e0b16;
+    border-left: 2px solid #fff;
+    overflow-y: scroll;
+}

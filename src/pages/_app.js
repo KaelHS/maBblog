@@ -1,7 +1,8 @@
 import '../styles/globals.css'
-import '../components/PostCard/Postcard.css';
-import '../components/PostContainer/PostContainer.css';
-import '../components/SideBar/SideBar.css';
+import '../styles/Postcard.css';
+import '../styles/PostContainer.css';
+import '../styles/SideBar.css';
+import '../styles/LoginForm.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

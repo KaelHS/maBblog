@@ -20,8 +20,8 @@ export default class Sidebar extends React.Component {
                         </div> 
                     </section>
                     <div className="contact-container">
-                        <Link href="#"><a className="logo-link"><Image src="/logo-linkedin.png" width={30} height={30}/></a></Link>
-                        <Link href="#"><a className="logo-link"><Image src="/logo-github.png" width={30} height={30}/></a></Link>
+                        <Link href="https://www.linkedin.com/in/kaelhsilva/"><a className="logo-link"><Image src="/logo-linkedin.png" width={30} height={30}/></a></Link>
+                        <Link href="https://github.com/KaelHS"><a className="logo-link"><Image src="/logo-github.png" width={30} height={30}/></a></Link>
                     </div>
                     <div className="sidenav">
                         <ul>
