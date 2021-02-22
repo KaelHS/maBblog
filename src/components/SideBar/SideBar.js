@@ -6,7 +6,6 @@ import style from './SideBar.module.css';
 export default class Sidebar extends React.Component {
     render(){
         return(
-            <React.Fragment className={style}>
                 <div className={style.sidebar}>
                     <div className={style.sidebar-container}>
                         <div className={style.welcome}>
@@ -24,7 +23,7 @@ export default class Sidebar extends React.Component {
                         <Link href="https://www.linkedin.com/in/kaelhsilva/"><a className={style.logo-link}><Image src="/logo-linkedin.png" width={30} height={30}/></a></Link>
                         <Link href="https://github.com/KaelHS"><a className={style.logo-link}><Image src="/logo-github.png" width={30} height={30}/></a></Link>
                     </div>
-                    <div className="sidenav">
+                    <div className={style.sidenav}>
                         <ul>
                             <li><Link href="/"><a>Home</a></Link></li>
                             <li><Link href="/contact"><a>Contato</a></Link></li>
@@ -33,7 +32,6 @@ export default class Sidebar extends React.Component {
                     </div>
                     </div>
                 </div>
-            </React.Fragment>
         );
     }
 }
