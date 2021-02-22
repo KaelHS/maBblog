@@ -12,7 +12,7 @@ const LoginForm = () => {
                 <input type="password" name="password" placeholder="Senha" required />
                 <input type="submit" value="Entrar" />
             </form>
-    )
+    );
 }
 
 export default LoginForm;
