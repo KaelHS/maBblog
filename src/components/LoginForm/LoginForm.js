@@ -1,19 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
-import style from './LoginForm.module.css';
+import styles from './LoginForm.module.css';
 
 const LoginForm = () => {
     return (
-        <React.Fragment className={style}>
-            <form action="auth"className="login-form ">
-                <div className="logo-container">
+            <form action="auth"className={styles.login-form}>
+                <div className={styles.logo-container}>
                     <Image src="/middle-finger-logo.png" width={150} height={200} />
                 </div>
                 <input type="text" name="username" placeholder="Usuario" required />
                 <input type="password" name="password" placeholder="Senha" required />
                 <input type="submit" value="Entrar" />
             </form>
-        </React.Fragment >
     )
 }
 
