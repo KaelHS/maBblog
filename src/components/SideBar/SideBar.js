@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-
+import style from './SideBar.module.css';
 
 export default class Sidebar extends React.Component {
     render(){
         return(
+            <React.Fragment className={style}>
                 <div className="sidebar">
                     <div className="sidebar-container">
                         <div className="welcome">
@@ -32,6 +33,7 @@ export default class Sidebar extends React.Component {
                     </div>
                     </div>
                 </div>
+            </React.Fragment>
         );
     }
 }
