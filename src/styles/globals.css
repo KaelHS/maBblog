@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a, h1, h2, h3, li, ul  {
+a, h1, h2, h3,h5 li, ul, p  {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -15,4 +15,135 @@ a, h1, h2, h3, li, ul  {
 
 * {
   box-sizing: border-box;
+}
+.contact-page-container {
+  margin: 0;
+  background: #3634a0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-page-container::before, .contact-page-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.info-page-container {
+  margin: 50px;
+  float:left;
+  padding: 10px;
+  max-width: 600px;
+}
+.info-page-container h1 {
+  font-size: 3.5em;
+  color: #fff;
+}
+.info-page-container h5 {
+  font-size: 1.25em;
+  font-weight: normal;
+  color: rgb(255,255,255, 0.7);;
+}
+
+.card-contact-container {
+  margin-top: 100px;
+}
+
+.card-contact {
+  width: 400px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #3634a0;
+  
+}
+.card-contact::before, .card-contact::after {
+  content:'';
+  display: table;
+  clear: both;
+
+}
+
+
+.card-contact a {
+  color: #fff;
+  margin: auto;
+  font-size: 0.977em;
+  line-height: 1.25em;
+}
+.card-contact img {
+  float:left;
+  display: block;
+  margin:5px;
+  width: 20px;
+  height: 20px;
+
+}
+.card-contact p {
+  font-size: 1.25em;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  align-self: center;
+}
+.card-contact:hover {
+  background: rgb(255,255,255, 0.1);
+  border: 2px solid #00acee;
+}
+
+
+.form-page-container {
+  margin: 50px;
+  float:left;
+  padding: 10px;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.form-contact {
+  margin: 20px;
+}
+
+.form-contact label {
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 2px;
+}
+
+.form-contact input {
+  width: 100%;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 2px solid#00acee;
+  border-radius: 7px;
+}
+
+.form-contact textarea {
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid#00acee;
+  border-radius: 7px;
+  height: 160px;
+  background: #fffafa;
+}
+
+.form-contact input[type="submit"] {
+  width: 300px;
+  cursor: pointer;
+}
+
+.form-contact input[type="submit"]:hover {
+  font-weight: bold;
+  background: #00acee;
+  color: #fff;
+  transition: 0.5s;
+  
 }
