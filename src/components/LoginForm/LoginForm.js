@@ -4,7 +4,7 @@ import styles from './LoginForm.module.css';
 
 const LoginForm = () => {
     return (
-            <form action="auth"className={styles.login-form}>
+            <form className={styles.login-form}>
                 <div className={styles.logo-container}>
                     <Image src="/middle-finger-logo.png" width={150} height={200} />
                 </div>
