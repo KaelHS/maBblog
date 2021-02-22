@@ -1,5 +1,5 @@
 import React from 'react';
-import PostCard from '../PostCard/Postcard';
+import PostCard from '../PostCard';
 
 export default class PostContainer extends React.Component {
     render(){
