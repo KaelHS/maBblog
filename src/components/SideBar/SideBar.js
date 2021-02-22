@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import styless from './SideBar.module.css';
+import styles from './SideBar.module.css';
 
 export default class Sidebar extends React.Component {
     render(){
