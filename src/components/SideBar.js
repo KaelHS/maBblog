@@ -57,7 +57,7 @@ const ContactContainer = styled.div`
     }
 `;
 
-const LogoLink = styled.a`
+const IconLink = styled.a`
     margin: 6px;
 `;
 
@@ -96,8 +96,8 @@ export default class Sidebar extends React.Component {
                         </div> 
                     </Presentation>
                     <ContactContainer>
-                        <Link href="https://www.linkedin.com/in/kaelhsilva/"><LogoLink><Image src="/logo-linkedin.png" width={30} height={30}/></LogoLink></Link>
-                        <Link href="https://github.com/KaelHS"><LogoLink><Image src="/logo-github.png" width={30} height={30}/></LogoLink></Link>
+                        <Link href="https://www.linkedin.com/in/kaelhsilva/"><a><IconLink><Image src="/logo-linkedin.png" width={30} height={30}/></IconLink></a></Link>
+                        <Link href="https://github.com/KaelHS"><IconLink><Image src="/logo-github.png" width={30} height={30}/></IconLink></Link>
                     </ContactContainer>
                     <SideNav>
                         <ul>
