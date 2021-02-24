@@ -97,7 +97,7 @@ export default class Sidebar extends React.Component {
                     </Presentation>
                     <ContactContainer>
                         <Link href="https://www.linkedin.com/in/kaelhsilva/"><a><IconLink><Image src="/logo-linkedin.png" width={30} height={30}/></IconLink></a></Link>
-                        <Link href="https://github.com/KaelHS"><IconLink><Image src="/logo-github.png" width={30} height={30}/></IconLink></Link>
+                        <Link href="https://github.com/KaelHS"><a><IconLink><Image src="/logo-github.png" width={30} height={30}/></IconLink></a></Link>
                     </ContactContainer>
                     <SideNav>
                         <ul>
