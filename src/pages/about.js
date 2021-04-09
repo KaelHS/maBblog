@@ -4,11 +4,7 @@ import styled from 'styled-components';
 
 
 const Container = styled.body`
-<<<<<<< HEAD
     box-sizing: border-box;
-=======
-    box-size: border-box;
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     position: fixed;
     width: 100%;
     height:100%;
@@ -26,10 +22,6 @@ const Container = styled.body`
 const TextContainer = styled.div`
     margin: 100px 0 auto 30px;
     float: left;
-<<<<<<< HEAD
-    width:50%auto;
-=======
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     max-width: 400px;
     padding: 10px;
 
@@ -46,10 +38,7 @@ const Paragrafo = styled.p`
 `;
 
 const ImgContainer = styled.div`
-<<<<<<< HEAD
     width: 50%;
-=======
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     margin: 50px 0 auto 150px;
     float: left;
     max-width: 600px;
@@ -57,12 +46,8 @@ const ImgContainer = styled.div`
 
     img {
         display: block;
-<<<<<<< HEAD
         filter: blur(1px);
         transform: rotate(360deg) infinite;
-=======
-        filter: blur(2px);
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     }
 `;
 const About = () => {
