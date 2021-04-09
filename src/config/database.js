@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { MongoClient } from 'mongodb';
 
 let cachedDb = null;
@@ -21,11 +20,3 @@ export default async function connect() {
 
     return {db, client};
 }
-=======
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://Blog', {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.Promise = global.Promise;
-
-export default mongoose;
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
