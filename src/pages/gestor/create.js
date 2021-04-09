@@ -68,7 +68,7 @@ const SubmitInput = styled.input.attrs(props => ({
 `;
 
 
-const create = () => {
+const Create = () => {
 
     const router = useRouter();
     const customAlert = withReactContent(Swal);
@@ -133,4 +133,4 @@ const create = () => {
     )
 }
 
-export default create
+export default Create;
