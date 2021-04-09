@@ -15,7 +15,11 @@ const Bar = styled.div`
 `;
 
 const Container = styled.div`
+<<<<<<< HEAD
     margin: 50px auto 50px; 
+=======
+    margin:0 auto; 
+>>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     text-align: center; 
 
 `;
@@ -59,12 +63,19 @@ const ContactContainer = styled.div`
 
 const IconLink = styled.a`
     margin: 6px;
+<<<<<<< HEAD
 
 
 `;
 
 const SideNav = styled.div`
     margin-top: 5rem;
+=======
+`;
+
+const SideNav = styled.div`
+    margin-top: 50px;
+>>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
 
     a {
         text-decoration: none;
@@ -81,6 +92,7 @@ const SideNav = styled.div`
 
 `;
 
+<<<<<<< HEAD
 const GestorConfigContainer = styled.section`
     padding: 5px;
     margin: 30px auto;
@@ -100,6 +112,10 @@ const GestorConfigContainer = styled.section`
 
 
 const Sidebar = () => {
+=======
+export default class Sidebar extends React.Component {
+    render(){
+>>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
         return(
             <Bar>
                     <Container>
@@ -125,6 +141,7 @@ const Sidebar = () => {
                             <li><Link href="/about"><a>Sobre Mim</a></Link></li>              
                         </ul>
                     </SideNav>
+<<<<<<< HEAD
                     <GestorConfigContainer>
                         <Link href="/gestor/create"><a><Image src="/config.png" width={30} height={30} /></a></Link>
                     </GestorConfigContainer>
@@ -134,3 +151,10 @@ const Sidebar = () => {
 }
 
 export default Sidebar;
+=======
+                    </Container>
+            </Bar>
+        );
+    }
+}
+>>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
