@@ -8,21 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.21.1",
     "mongodb": "^3.6.6",
-=======
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
     "mongoose": "^5.11.16",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-<<<<<<< HEAD
     "styled-components": "^5.2.1",
     "sweetalert2": "^10.16.0",
     "sweetalert2-react-content": "^3.3.1"
-=======
-    "styled-components": "^5.2.1"
->>>>>>> cad6fb189bc930a69411f2e6fe1634e3c4518ad0
   }
 }
