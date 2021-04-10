@@ -22,20 +22,27 @@ const Container = styled.div`
 
 const Welcome = styled.div`
 
+    font-family: monospace;
+    color: #fff;
+
     h2 {
-        margin-bottom: 5px;
-        font-size: 1.625em;
+        margin-top: 2rem;
+        margin-bottom: 0.825rem;
+        font-size: 2em;
     }
     h3 {
         margin-bottom: 40px;
-        font-size: 1.1875em;
+        font-size: 1.3em;
         font-weight:  none;
     }
 
 `;
 
 const Presentation = styled.section`
-    padding: 5px;
+    font-family: monospace;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.825rem;
     margin: 0 auto;
     max-width: 300px;
     white-space: normal;
@@ -60,7 +67,6 @@ const ContactContainer = styled.div`
 const IconLink = styled.a`
     margin: 6px;
 
-
 `;
 
 const SideNav = styled.div`
@@ -68,7 +74,8 @@ const SideNav = styled.div`
 
     a {
         text-decoration: none;
-        font-size: 1.1875em;
+        font-size: 1.3em;
+        font-family: monospace;
         color: #ccc;
     }
     a:hover {
@@ -106,7 +113,7 @@ const Sidebar = () => {
                         <Welcome>
                             <Image src="/avatar.png" width={60} height={60}/>
                             <h2>Kael Silva</h2>
-                            <h3>Full Stack Desenvolvedor</h3>
+                            <h3>Full Stack Developer</h3>
                         </Welcome>
                     <Presentation>
                         <div>
@@ -126,7 +133,7 @@ const Sidebar = () => {
                         </ul>
                     </SideNav>
                     <GestorConfigContainer>
-                        <Link href="/gestor/create"><a><Image src="/config.png" width={30} height={30} /></a></Link>
+                        <Link href="/gestor"><a><Image src="/config.png" width={30} height={30} /></a></Link>
                     </GestorConfigContainer>
                     </Container>
             </Bar>

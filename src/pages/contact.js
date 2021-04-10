@@ -9,7 +9,8 @@ import withReactContent from 'sweetalert2-react-content';
 const ContactPageContainer = styled.section`
 
     margin: 0;
-    background: #3634a0;
+    //background: #3634a0;
+    background: #373737;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -49,7 +50,7 @@ const CardContact = styled.div`
     margin-bottom: 5px;
     padding: 15px;
     border-radius: 5px;
-    border: 2px solid #3634a0;
+    border: 2px solid #373737;
 
     &::before, &::after {
         display: table;
@@ -59,7 +60,8 @@ const CardContact = styled.div`
     
     &:hover {
         background: rgb(255,255,255, 0.1);
-        border: 2px solid #00acee;
+        border: 2px solid #e54;
+        //#00acee ; antigo hover
         cursor: pointer;
     }
 `;  
@@ -89,24 +91,33 @@ const Text = styled.p`
     align-self: center;
 `;
 
+const HomeImage = styled.img`
+    margin: 6rem auto;
+    width:70px;
+    height:70px;
+    display: block;
+
+`;
+
 const FormPageContainer = styled.div`
     margin: 50px;
     float:left;
     padding: 10px;
     max-width: 600px;
-    background: #fff;
+    background: #0e0b16;
     border-radius: 14px;
 `;  
 
 const FormContact = styled.form`
     margin: 20px;
+    color: #fff;
 `;
 
 const Label = styled.label`
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.825em;
     line-height: 2em;
-    margin: 2px;
+    margin: 1px;
 `;
   
 const Input = styled.input`
@@ -123,7 +134,7 @@ const TextArea = styled.textarea.attrs(props => ({
     type: "text",
 }))`
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px solid#00acee;
@@ -210,7 +221,7 @@ const Contact = () => {
                         </Link>
                     </CardContact>
                 </CardContactContainer>
-                <Link href="/"><a><button type="button">Home</button></a></Link>
+                <Link href="/"><a><HomeImage src="/home-logo.png"/></a></Link>
             </InfoPageContainer>
             <FormPageContainer>
                 <FormContact onSubmit={handleSubmit}>
