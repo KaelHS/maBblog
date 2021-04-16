@@ -169,7 +169,7 @@ const Home = () => {
             <MainContainer>
                 <BlockContainer>
                     <ImageContainer>
-                        <Image src="/me.png " width={200} height={200} />
+                        <Image src="/me.png" width={200} height={200} />
                     </ImageContainer>
                     <ContactContainer>
                         <Link href="https://www.linkedin.com/in/kaelhsilva/"><a><IconLink><Image src="/logo-linkedin.png" width={35} height={35}/></IconLink></a></Link>
