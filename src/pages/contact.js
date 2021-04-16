@@ -60,7 +60,7 @@ const CardContact = styled.div`
     
     &:hover {
         background: rgb(255,255,255, 0.1);
-        border: 2px solid #e54;
+        border: 2px solid #00acee;
         //#00acee ; antigo hover
         cursor: pointer;
     }
@@ -202,7 +202,7 @@ const Contact = () => {
         <ContactPageContainer>
             <InfoPageContainer> 
                 <Title>Entre em Contato!</Title>
-                <Subtitle>Nos mande uma sugestão, uma dúvida ou oferta de freela =)</Subtitle> 
+                <Subtitle>Nos mande uma sugestão, uma dúvida ou um salve! =)</Subtitle> 
                 <CardContactContainer>
                     <CardContact>
                         <Link href="#">

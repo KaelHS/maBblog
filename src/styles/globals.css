@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-a, h1, h2, h3,h5 li, ul, p  {
+a, h1, h2, h3, h4, h5, li, ul, p  {
   padding: 0;
   margin: 0;
   list-style: none;

@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -55,20 +56,49 @@ const Texto = styled.p`
     font-family: Helvetica, Arial;
 `;
 
+// export const getStaticProps = async (context) => {
+
+//     const res = await api.get('/api/posts');
+
+//     const posts  = await res.data;
+
+//     return {
+//         props: {
+//             posts,
+//         }
+//     }
+
+// }
+
+// export const getServerSideProps = async (context) => {
+
+//     const db = await connect();
+
+//     const allPostsDB = await db.collection('posts').find().toArray();
+
+//     const posts = JSON.parse(JSON.stringify(allPostsDB))
+
+//     return {
+//         props: {
+//             posts,
+//         }
+//     }
+// }
+
 const PostCard = () => {
-        return(
-                <Link href="/about"><a>
-                <Postcard >
-                <ImgCard />
-                <TextCard>
-                    <Data>Dia 09 de Janeiro de 2021 - 5 minutos de leitura</Data>
-                    <Titulo>Titulo do Post</Titulo>
-                    <Texto>Adipisicing adipisicing sunt commodo quis in cillum mollit minim proident culpa duis.
-                    </Texto>
-                </TextCard> 
-            </Postcard>
-            </a></Link>
-        );
-    }
+    return(
+            <Link href="/about"><a>
+            <Postcard >
+            <ImgCard />
+            <TextCard>
+                <Data>Dia 09 de Janeiro de 2021 - 5 minutos de leitura</Data>
+                <Titulo>Titulo do Post</Titulo>
+                <Texto>Adipisicing adipisicing sunt commodo quis in cillum mollit minim proident culpa duis.
+                </Texto>
+            </TextCard> 
+        </Postcard>
+        </a></Link>
+    );
+}
 
 export default PostCard;

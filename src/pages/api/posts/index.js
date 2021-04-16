@@ -17,16 +17,19 @@ export default async function getPosts (req, res) {
 
         res.status(201).json({ message: "Post Criado!"});
         
-    } else {
-        const { db } = await connect();
-        
+    }  else {
 
-        const responses = await db.collection('posts').find( {}, (err, data) => { 
-            if (err) {
-                console.log("Não foi possível acessar o DB")
-            } else return data; })
-            .toArray();
+        const { db } = await connect();
+
+        const responses = await db.collection('posts').find().toArray();
         
-        res.status(200).json(responses)
+        // const responses = await db.collection('posts').find( {}, (err, data) => { 
+        //     if (err) {
+        //         console.log("Não foi possível acessar o DB")
+        //     } else return data; })
+        //     .toArray();
+
+        
+        return res.json(responses)
     }
 }
