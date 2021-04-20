@@ -43,12 +43,12 @@ const Courses = () => {
         title: 'Em Construção...!!',
         text: 'Conteúdo em Breve!',
         showConfirmButton: false,
-        timer: 3000,
+        timer: 1800,
         })
     
     setTimeout( () => {
         router.push('/')
-    }, 3000);
+    }, 1800);
 
 
     return(
