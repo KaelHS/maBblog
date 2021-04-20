@@ -40,9 +40,14 @@ const BrandName = styled.div`
     float: left;
 
     & h3 {
+        font-weight: none;
         padding: 0;
-        font-size: 2em;
-        color: #fff;
+        font-size: 2.3em;
+        color: #00acee;
+    }
+    
+    & span {
+        font-weight: bold;
     }
 `;
 
@@ -154,13 +159,13 @@ const Home = () => {
             <Nav>
                 <NavContainer>
                     <BrandName> 
-                        <Link href="/"><a><h3>Kael Silva</h3></a></Link>
+                        <Link href="/"><a><h3><span>Kael </span>Silva</h3></a></Link>
                     </BrandName>
                     <NavMenu >
                         <ul>
-                            <Link href="#"><a><li>Cursos</li></a></Link>
+                            <Link href="/courses"><a><li>Cursos</li></a></Link>
                             <Link href="/blog"><a><li>Blog</li></a></Link>
-                            <Link href="#"><a><li>Portifólio</li></a></Link>
+                            <Link href="/portfolio"><a><li>Portifólio</li></a></Link>
                             <Link href="/contact"><a><li>Contato</li></a></Link>
                         </ul>
                     </NavMenu>
@@ -172,9 +177,9 @@ const Home = () => {
                         <Image src="/me.png" width={200} height={200} />
                     </ImageContainer>
                     <ContactContainer>
-                        <Link href="https://www.linkedin.com/in/kaelhsilva/"><a><IconLink><Image src="/logo-linkedin.png" width={35} height={35}/></IconLink></a></Link>
-                        <Link href="https://www.instagram.com/kael_hs/"><a><IconLink><Image src="/logo-instagram.png" width={35} height={35}/></IconLink></a></Link>
-                        <Link href="https://github.com/KaelHS"><a><IconLink><Image src="/logo-github.png" width={35} height={35}/></IconLink></a></Link>
+                        <Link href="https://www.linkedin.com/in/kaelhsilva/" ><a target="_blank"><IconLink ><Image src="/logo-linkedin.png" width={35} height={35}/></IconLink></a></Link>
+                        <Link href="https://www.instagram.com/kael_hs/"><a target="_blank"><IconLink ><Image src="/logo-instagram.png" width={35} height={35}/></IconLink></a></Link>
+                        <Link href="https://github.com/KaelHS"><a target="_blank"><IconLink ><Image src="/logo-github.png" width={35} height={35}/></IconLink></a></Link>
                         
                     </ContactContainer>
                 </BlockContainer>

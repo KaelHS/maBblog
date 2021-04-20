@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link'
 
-const Nav = styled.section`
-    width: 100%;
+const Nav = styled.header`
+    display: block;
     position: fixed;
-    top: 0;
-    background: #373737;
+    width: 100%;
+    margin:0;
+    background: #0e0b16;
 `;
 
 const NavContainer = styled.div`
@@ -14,20 +15,26 @@ const NavContainer = styled.div`
 
 
     &::after, &::before {
+        content: '';
         display: table;
         clear: both;
-        content: '';
+
     }
 `;
 
 const BrandName = styled.div`
-    padding: 0;
+    padding: 1rem;
     float: left;
 
     & h3 {
+        font-weight: none;
         padding: 0;
-        font-size: 2em;
-        color: #fff;
+        font-size: 2.3em;
+        color: #00acee;
+    }
+    
+    & span {
+        font-weight: bold;
     }
 `;
 
@@ -38,31 +45,36 @@ const NavMenu = styled.div`
         margin-left: auto;
     }
     & li { 
+        font-family: monospace;
         display: inline-block; 
         margin: 1rem;
-        font-size: 1.75em;
+        font-size: 2em;
         color: #fff;
         padding: 0;
+
+        &:hover {
+            color: #00acee;
+        }
     }
 `;
 
 const NavBar = () => {
     return(
         <Nav>
-            <NavContainer>
-                <BrandName> 
-                    <Link href="#"><a><h3>Kael Silva</h3></a></Link>
-                </BrandName>
-                <NavMenu >
-                    <ul>
-                        <Link href="#"><a><li>Cursos</li></a></Link>
-                        <Link href="#"><a><li>Blog</li></a></Link>
-                        <Link href="#"><a><li>Portifólio</li></a></Link>
-                        <Link href="#"><a><li>Contato</li></a></Link>
-                    </ul>
-                </NavMenu>
-            </NavContainer>
-        </Nav>
+                <NavContainer>
+                    <BrandName> 
+                        <Link href="/"><a><h3><span>Kael </span>Silva</h3></a></Link>
+                    </BrandName>
+                    <NavMenu >
+                        <ul>
+                            <Link href="/courses"><a><li>Cursos</li></a></Link>
+                            <Link href="/blog"><a><li>Blog</li></a></Link>
+                            <Link href="#"><a><li>Portifólio</li></a></Link>
+                            <Link href="/contact"><a><li>Contato</li></a></Link>
+                        </ul>
+                    </NavMenu>
+                </NavContainer>
+            </Nav>
     );
 }
 
