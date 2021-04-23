@@ -12,6 +12,6 @@ export default async function connect() {
 
     const db = client.db('Blog');
 
-    return  { db, client};
+    return  { db };
 
 }
