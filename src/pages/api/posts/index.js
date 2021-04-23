@@ -2,7 +2,7 @@ import connect from '../../../config/database';
 
 export default async function getPosts (req, res) {
 
-    if(req.method === 'POST') {
+    if(req.method === 'post') {
         
         const { title, author, content } = req.body;
 
