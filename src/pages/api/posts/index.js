@@ -22,14 +22,7 @@ export default async function getPosts (req, res) {
         const { db } = await connect();
 
         const responses = await db.collection('posts').find().toArray();
-        
-        // const responses = await db.collection('posts').find( {}, (err, data) => { 
-        //     if (err) {
-        //         console.log("Não foi possível acessar o DB")
-        //     } else return data; })
-        //     .toArray();
-
-        
-        return res.json(responses)
+      
+        return res.send(responses);
     }
 }
