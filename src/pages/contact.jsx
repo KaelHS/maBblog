@@ -192,9 +192,12 @@ const Contact = () => {
             timer: 5000,
             })
 
-        setTimeout(() => {
-            router.push('/');
-        }, 5000);
+
+        React.useEffect(() => {
+            setTimeout( () => {
+                router.push('/')
+            }, 1800);  
+        }, [])
 
     }
     

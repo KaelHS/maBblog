@@ -72,10 +72,29 @@ const Texto = styled.p`
     font-family: Helvetica, Arial;
 `;
 
-export const PostCard = ( { title, date, content }) => {
+
+
+export const getStaticProps = async () => {
+
+    const {data} = await axios.get('http://localhost:3000/api/posts');
+  
+  
+    return {
+        props: {
+            posts: data,
+        }
+    }
+  
+  }
+
+export default function Blog( {posts} ) {
+
+    const { title, date, content } = posts ;
+
+    function PostCard ( title, date, content )  {
 
         return(
-                <Link href={`/posts/${title}`}><a>
+                <Link href="#"><a>
                 <Postcard >
                 <ImgCard />
                 <TextCard>
@@ -88,35 +107,17 @@ export const PostCard = ( { title, date, content }) => {
         );
     }
 
-
-
-
-export default function Blog( {posts} ) {
-
-  return(
-    <React.Fragment>
-      <Sidebar />
-      <Container>
-      {
-        posts.map( post => {
-          return (
-            <PostCard key={post._id} title={post.title} content={post.content} date={ post.createdAt }/>
-        )})} 
-      </Container>
-    </React.Fragment>
+    return(
+        <React.Fragment>
+        <Sidebar />
+        <Container>
+        {
+            posts.map( post => {
+            return (
+                <PostCard key={post._id} title={post.title} content={post.content} date={ post.createdAt }/>
+            )})} 
+        </Container>
+        </React.Fragment>
         
     );
-}
-
-export const getStaticProps = async () => {
-
-  const {data} = await axios.get('http://localhost:3000/api/posts');
-
-
-  return {
-      props: {
-          posts: data,
-      }
-  }
-
 }

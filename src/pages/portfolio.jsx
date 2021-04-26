@@ -46,9 +46,11 @@ const Portfolio = () => {
         timer: 1800,
         })
     
-    setTimeout( () => {
-        router.push('/')
-    }, 1800);
+    React.useEffect(() => {
+        setTimeout( () => {
+            router.push('/')
+        }, 1800);       
+    }, [])
 
 
     return(
