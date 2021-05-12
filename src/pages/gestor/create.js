@@ -68,7 +68,7 @@
 // `;
 
 
-// const Create = () => {
+const Create = () => {
 
 //     const router = useRouter();
 //     const customAlert = withReactContent(Swal);
@@ -103,7 +103,7 @@
 
 //     }
 
-//     return (
+  return ( <h1>Testes</h1>
 //             <FormPageContainer>
 //                 <FormPost onSubmit={handleSubmit}>
 //                     <Label htmlFor="title">Titulo</Label>
@@ -130,7 +130,7 @@
 //                     <SubmitInput type="submit" value="Postar"/>
 //                 </FormPost>
 //             </FormPageContainer>
-//     )
-// }
+  )
+}
 
-// export default Create;
+export default Create;

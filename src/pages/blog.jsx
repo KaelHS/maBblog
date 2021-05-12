@@ -87,7 +87,7 @@
   
 // //   }
 
-// export default function Blog( {posts} ) {
+ export default function Blog( ) {
 
 //     const [postList, setPostList] = React.useState([]);
 
@@ -109,7 +109,7 @@
 //         );
 //     }
 
-//     return(
+    return(
 //         <React.Fragment>
 //         <Sidebar />
 //         <Container>
@@ -118,6 +118,6 @@
 //             return <PostCard key={post._id} posts={post}/>})} 
 //         </Container>
 //         </React.Fragment>
-        
-//     );
-// }
+        <h1>Blog</h1>
+    );
+}
