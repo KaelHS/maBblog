@@ -2,22 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
-import Contact from './contact';
 import Portfolio from './portfolio';
 import { Techs } from '../components/Techs';
+import Contact from '../components/Contact';
 
-
-
-const Body = styled.body`
-    box-sizing: border-box;
-    position: fixed;
-    height:100%;
-    width: 100%;
-    background: #373737;
-    overflow: auto;
-    
-
-`;
 
 const Nav = styled.header`
     position: fixed;
@@ -178,7 +166,7 @@ const Home = () => {
                     </NavMenu>
                 </NavContainer>
             </Nav>
-            <section style={{height: '100vh', background: '#373737'}}>
+            <section style={{height: '100vh', background: '#373737', 'zIndex': '1'}}>
                 <MainContainer>
                     <BlockContainer>
                         <ImageContainer>
@@ -203,7 +191,7 @@ const Home = () => {
             </section>
             <Techs />
             {/* <Portfolio /> */}
-            <Contact id="contact"/>
+            <Contact />
 
         </>
     );
