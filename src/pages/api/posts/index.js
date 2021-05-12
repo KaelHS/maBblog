@@ -1,28 +1,28 @@
-import connect from '../../../config/database';
+// import connect from '../../../config/database';
 
-export default async function getPosts (req, res) {
+// export default async function getPosts (req, res) {
 
-    if(req.method === 'post') {
+//     if(req.method === 'post') {
         
-        const { title, author, content } = req.body;
+//         const { title, author, content } = req.body;
 
-        const { db } = await connect();
+//         const { db } = await connect();
 
-        await db.collection('posts').insertOne({
-            title: title,
-            author: author,
-            content: content,
-            date: new Date(),
-        });
+//         await db.collection('posts').insertOne({
+//             title: title,
+//             author: author,
+//             content: content,
+//             date: new Date(),
+//         });
 
-        res.status(201).json({ message: "Post Criado!"});
+//         res.status(201).json({ message: "Post Criado!"});
         
-    }  else {
+//     }  else {
 
-        const { db } = await connect();
+//         const { db } = await connect();
 
-        const responses = await db.collection('posts').find().toArray();
+//         const responses = await db.collection('posts').find().toArray();
       
-        return res.send(responses);
-    }
-}
+//         return res.send(responses);
+//     }
+// }
