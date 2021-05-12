@@ -13,6 +13,7 @@ const ContactPageContainer = styled.section`
     background: #373737;
     /* height: 100%; */
     width: 100%;
+    z-index:1;
 
     &::before, &::after {
         display: table;
@@ -161,7 +162,7 @@ const SubmitInput = styled.input.attrs(props => ({
 `;
 
 
-const Contact = () => {
+export const Contact = () => {
 
     const [ cname, setCname ] = React.useState('');
     const [ cemail, setCemail ] = React.useState('');
@@ -223,7 +224,7 @@ const Contact = () => {
                         </Link>
                     </CardContact>
                 </CardContactContainer>
-                <Link href="/"><a><HomeImage src="/home-logo.png"/></a></Link>
+                {/* <Link href="/"><a><HomeImage src="/home-logo.png"/></a></Link> */}
             </InfoPageContainer>
             <FormPageContainer>
                 <FormContact onSubmit={handleSubmit}>
@@ -251,5 +252,3 @@ const Contact = () => {
         </ContactPageContainer>
     )
 }
-
-export default Contact;

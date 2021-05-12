@@ -43,6 +43,7 @@ export const Title = styled.h1`
 
 
 export const TechContainer = styled.div`
+    max-width:1300px;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

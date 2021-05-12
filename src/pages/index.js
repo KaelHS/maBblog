@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Portfolio from './portfolio';
 import { Techs } from '../components/Techs';
-import Contact from '../components/Contact';
+import {Contact} from '../components/Contact';
 
 
 const Nav = styled.header`
