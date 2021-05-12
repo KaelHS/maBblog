@@ -19,11 +19,6 @@ import {
     TextArea, 
     SubmitInput } from './styles.js';
 
-
-
-
-
-
 export const Contact = () => {
 
     const [ cname, setCname ] = React.useState('');

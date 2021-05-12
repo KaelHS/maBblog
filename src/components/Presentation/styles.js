@@ -46,8 +46,10 @@ export const ContactContainer = styled.div`
         margin: 4rem;
     }
 `;
-export const IconLink = styled.a`
+export const IconLink = styled.div`
+    /* display: inline-block; */
     margin: 0.8rem;
+    float: left;
 
 `;
 

@@ -21,10 +21,15 @@ export const Presentation = () => {
                         <Image src="/me.png" width={200} height={200} />
                     </ImageContainer>
                     <ContactContainer>
-                        <Link href="https://www.linkedin.com/in/kaelhsilva/" ><a target="_blank"><IconLink ><Image src="/logo-linkedin.png" width={35} height={35}/></IconLink></a></Link>
-                        <Link href="https://www.instagram.com/kael_hs/"><a target="_blank"><IconLink ><Image src="/logo-instagram.png" width={35} height={35}/></IconLink></a></Link>
-                        <Link href="https://github.com/KaelHS"><a target="_blank"><IconLink ><Image src="/logo-github.png" width={35} height={35}/></IconLink></a></Link>
-                        
+                        <IconLink>
+                            <Link href="https://www.linkedin.com/in/kaelhsilva/" ><a target="_blank"><Image src="/logo-linkedin.png" width={35} height={35}/></a></Link>
+                        </IconLink>
+                        <IconLink>
+                            <Link href="https://www.instagram.com/kael_hs/"><a target="_blank"><Image src="/logo-instagram.png" width={35} height={35}/></a></Link>
+                        </IconLink>
+                        <IconLink>
+                            <Link href="https://github.com/KaelHS"><a target="_blank"><Image src="/logo-github.png" width={35} height={35}/></a></Link>
+                        </IconLink> 
                     </ContactContainer>
                 </BlockContainer>
                 <InfoContainer>
