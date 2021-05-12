@@ -54,7 +54,6 @@ const Courses = () => {
 
     return(
         <Body>
-            <NavBar />
             <MainContainer>
                 
             </MainContainer>
