@@ -43,7 +43,7 @@ const TextArea = styled.textarea.attrs(props => ({
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 2px solid#00acee;
+    border: 2px solid #00acee;
     border-radius: 7px;
     height: 18rem;
     background: #fffafa;

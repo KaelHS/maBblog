@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavBar from '../components/NavBar';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { useRouter } from 'next/router';
+
 
 const Body = styled.body`
     box-sizing: border-box;
@@ -15,26 +15,42 @@ const Body = styled.body`
 
 `;
 
-const MainContainer = styled.div`
-    max-width: 1100px;
-    height: 200px;
-    margin: auto;
-    position: relative;
-    top: 45%;
-    padding: 0;
-    text-align: center;
-    align-items: center;
+export const TitleContainer = styled.section`
+        background: #373737;
+        align-items: center;
+        margin: 0;
 
-    & h1 {
-        font-size: 5em;
-        margin: auto;
-        font-family: monospace;
-        color: #fff;    
-    }
+`;
+
+export const Title = styled.h1`
+    
+    text-shadow: 0 0 0.4em #00acee;
+    font-family: monospace;
+    color: #fff;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -5rem;
+
+`;
+
+const Container = styled.section`
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    background: #373737;
+    height: 500px;
+    margin: 0;
+    padding: 4rem;
+    align-items: center;
 `;
 
 const Portfolio = () => {
 
+    
     const router = useRouter();
     const customAlert = withReactContent(Swal);
 
@@ -49,18 +65,15 @@ const Portfolio = () => {
     React.useEffect(() => {
         setTimeout( () => {
             router.push('/')
-        }, 1800);       
+        }, 1800);  
     }, [])
-
-
-    return(
-        <Body>
-            <NavBar />
-            <MainContainer>
-                
-            </MainContainer>
-        </Body>
-
+    return (
+        <>
+            {/* <TitleContainer>
+                <Title>Projetos</Title>
+            </TitleContainer> */}
+            <Body />
+        </>
     );
 
 }

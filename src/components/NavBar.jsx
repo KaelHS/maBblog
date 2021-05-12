@@ -45,16 +45,19 @@ const NavMenu = styled.div`
         margin-left: auto;
     }
     & li { 
+
         font-family: monospace;
         display: inline-block; 
         margin: 1rem;
         font-size: 2em;
         color: #fff;
         padding: 0;
+        transition: 0.5s;
 
         &:hover {
             color: #00acee;
         }
+
     }
 `;
 

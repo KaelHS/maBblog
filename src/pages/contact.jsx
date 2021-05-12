@@ -11,8 +11,7 @@ const ContactPageContainer = styled.section`
     margin: 0;
     //background: #3634a0;
     background: #373737;
-    position: fixed;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     &::before, &::after {
@@ -189,15 +188,15 @@ const Contact = () => {
             title: 'Mensagem Enviada!!',
             text: 'Obrigado pelo contato =) ',
             showConfirmButton: false,
-            timer: 5000,
+            timer: 2500,
             })
 
 
-        React.useEffect(() => {
-            setTimeout( () => {
-                router.push('/')
-            }, 1800);  
-        }, [])
+        // React.useEffect(() => {
+        //     setTimeout( () => {
+        //         router.push('/')
+        //     }, 1800);  
+        // }, [])
 
     }
     
@@ -205,7 +204,7 @@ const Contact = () => {
         <ContactPageContainer>
             <InfoPageContainer> 
                 <Title>Entre em Contato!</Title>
-                <Subtitle>Nos mande uma sugestão, uma dúvida ou um salve! =)</Subtitle> 
+                <Subtitle>Nos mande uma sugestão, uma dúvida ou um olá! =)</Subtitle> 
                 <CardContactContainer>
                     <CardContact>
                         <Link href="#">

@@ -89,11 +89,13 @@ export const getStaticProps = async () => {
 
 export default function Blog( {posts} ) {
 
-    const { title, date, content } = posts ;
+    const [postList, setPostList] = React.useState([]);
 
-    function PostCard ( title, date, content )  {
+    setPostList(posts);
 
-        return(
+     function PostCard ( title, date, content )  {
+
+         return(
                 <Link href="#"><a>
                 <Postcard >
                 <ImgCard />
@@ -112,10 +114,8 @@ export default function Blog( {posts} ) {
         <Sidebar />
         <Container>
         {
-            posts.map( post => {
-            return (
-                <PostCard key={post._id} title={post.title} content={post.content} date={ post.createdAt }/>
-            )})} 
+            postList.map( post => {
+            return <PostCard key={post._id} posts={post}/>})} 
         </Container>
         </React.Fragment>
         
