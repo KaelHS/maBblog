@@ -12,10 +12,10 @@ export const NavBar = () => {
             </BrandName>
             <NavMenu >
                 <ul>
-                    <Link href="/courses"><a><li>Cursos</li></a></Link>
+                    {/* <Link href="#"><a><li>Cursos</li></a></Link> */}
                     {/* <Link href="/blog"><a><li>Blog</li></a></Link> */}
-                    <Link href="/portfolio"><a><li>Projetos</li></a></Link>
-                    {/* <a href="#contact"><li>Contato</li></a> */}
+                    <Link href="#"><a><li>Projetos</li></a></Link>
+                    <a href="#contact"><li>Contato</li></a>
                 </ul>
             </NavMenu>
         </NavContainer>

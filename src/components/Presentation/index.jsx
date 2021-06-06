@@ -35,10 +35,8 @@ export const Presentation = () => {
                 <InfoContainer>
                     <PresentationText>
                         <h4>FullStack Developer</h4>
-                        {/* <h2>Desenvolvedor de aplicações web performáticas, com foco na segurança e experiência de usuário</h2> */}
                         <h2> Projeto e desenvolvimento de aplicações WEB, com foco na acessibilidade, segurança e experiência do usuário </h2>
                     </PresentationText>
-                    {/* <h3> Stack Utilizada: ReactJS, NodeJS, Material UI, MongoDB </h3> */}
                 </InfoContainer >
             </MainContainer>
         </PresentationSection>
