@@ -1,0 +1,57 @@
+.container {
+
+    margin: 0 auto;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        color: var(--cyan-500);
+    }
+
+    .skillContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 4.7rem;
+
+        li {
+            display: flex;
+            padding: 0.5rem;
+            text-align: center;
+            border: solid 1px var(--gray-900);
+            background: var(--gray-900);
+            margin: 0 1.25rem;
+            border-radius: 0.3rem;
+            justify-content: left;
+            
+            & + li {
+                margin-top: 1.25rem;
+            }
+            
+            img {
+                display: inline;
+                margin: 0 2.5rem 0 1rem;
+            }
+            
+            h2 {
+                margin: 0 0 0 1.5rem;
+                font-family: monospace;
+                display: inline;
+                color: var(--white);
+                line-height: 4rem;
+                font-size: 2rem;
+                
+            }
+
+            &:hover {
+                text-shadow: 0 0 0.8rem var(--blue-500);
+                border: 1px solid var(--blue-500);
+                transition: 0.5s;
+                -webkit-transform: scale(1.1);
+                -webkit-transition: 0.5s;
+                -ms-transform: scale(0.8);
+                transform: scale(1.1);
+                cursor: default;
+            }
+        }
+    }
+}

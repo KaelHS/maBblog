@@ -1,0 +1,155 @@
+.contactContainer {
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .infoContainer {
+
+        max-width: 500px;
+        h1 {
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: var(--gray-300)
+        }
+
+        .cardContactContainer {
+            margin: 2rem 2rem 0 0;
+
+            .cardContact {
+                display: flex;
+                margin-top: 1rem;
+                align-items: center;
+                padding: 1rem 0.5rem;
+                margin-bottom: 0.5rem;
+                border-radius: 0.25rem;
+                border: 1px solid transparent;
+
+                &:hover {
+                    text-shadow: 0 0 0.8em #00acee;
+                    border: 1px solid #00acee;
+                    transition: 0.5s;
+                    // -webkit-transform: scale(1.1);
+                    // -webkit-transition: 0.5s;
+                    // -ms-transform: scale(0.8);
+                    // transform: scale(1.1);
+                    cursor: default;
+                }
+
+                a {
+                    line-height: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .socialCards {
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items:center;
+                width: 20rem;
+                padding: 0.5rem 1rem;
+                text-align: center;
+                border: solid 1px transparent;
+                background: var(--gray-900);
+                margin: 0 1.25rem;
+                border-radius: 0.3rem;
+                justify-content: left;
+            
+
+                & + li {
+                    margin-top: 1.25rem;
+                }
+
+                p {
+                    margin-left: 1.5rem;
+                    display: inline;
+                    color: var(--white);
+                    font-size: 1.25rem;
+                    
+                }
+
+                &:hover {
+                    text-shadow: 0 0 0.8rem var(--blue-500);
+                    filter: brightness(0.9);
+                    border: 1px solid var(--blue-500);
+                    transition: 0.5s;
+                    cursor: default;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.formContainer {
+    padding: 1rem;
+    max-width: 600px;
+    background: var(--gray-900);
+    border-radius: 0.25rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+
+        label {
+            width: 100%;
+            font-size: 1.825em;
+            line-height: 2em;
+            margin: 1px;
+        }
+
+        input{
+            width: 100%;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 2px solid #00acee;
+            border-radius: 7px;
+        }
+
+
+        textarea {
+            width: 100%;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #00acee;
+            border-radius: 7px;
+            height: 160px;
+            background: #fffafa;
+        }
+
+        button {
+            height: 3rem;
+            border-radius: 0.25rem;
+            border: 1px solid #00acee;
+            align-items: center;
+
+            &:hover {
+            font-weight: bold;
+            background: #00acee;
+            color: #fff;
+            transition: 0.5s;
+            cursor: pointer;
+            }
+        }
+    }
+}

@@ -8,15 +8,26 @@
     "start": "next start"
   },
   "dependencies": {
-
+    "@types/node": "^16.3.2",
+    "@types/react": "^17.0.14",
     "axios": "^0.21.1",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.3",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "react-slick": "^0.28.1",
+    "react-tsparticles": "^1.27.0",
+    "sass": "^1.35.2",
+    "sharp": "^0.28.3",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.3",
     "sweetalert2": "^10.16.0",
     "sweetalert2-react-content": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.11",
+    "typescript": "^4.3.5"
   }
 }

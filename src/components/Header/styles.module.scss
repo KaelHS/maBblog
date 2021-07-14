@@ -1,0 +1,41 @@
+.header {
+
+    border-bottom: 2px solid var(--blue-500);
+    padding: 1rem 2rem; 
+
+    ul {
+        display: flex;
+        justify-content:space-between;
+        list-style: none;
+
+        li {
+            height: 5rem;
+            line-height: 5rem;
+
+            a {
+                font-size: 1.5rem;
+                color: var(--blue-500);
+    
+                transition: filter 0.2s;
+    
+                & + a {
+                    margin-left: 2rem;
+                }
+    
+                &:hover {
+                    filter: brightness(0.9);
+                }
+    
+                &.active {
+                    color: var(--white);
+                    font-weight:bold;
+                }
+    
+                }
+
+        }
+
+    }
+
+
+}

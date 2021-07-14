@@ -1,0 +1,47 @@
+.bar {
+    width: 400px;
+    height: 100vh;
+    padding: 3rem; 
+    display:flex;
+    flex-direction: column;
+    background: var(--gray-900);
+
+    .sideHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+    }
+
+    section {
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        &::before {
+            content:'';
+            height: 1px;
+            width: 100%;
+            background: var(--gray-300);
+        }
+    }
+
+    .contactIcons {
+        display: flex;
+        padding: 0 4rem;
+        justify-content: space-around;
+
+    }
+
+    article{
+        margin-top: 2rem;
+        overflow-y: scroll;
+        font-size: 1.25rem;
+    }
+
+}
