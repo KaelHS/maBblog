@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FiLinkedin, FiInstagram } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import styles from './styles.module.scss';
+import { description } from '../../helpers/contents';
 
 export const Sidebar = () => {
         return(
@@ -34,13 +35,8 @@ export const Sidebar = () => {
                             </a>
                         </Link>
                     </div>
-                <article>
-                Tenho 18 anos, trabalho como front-end na Visualmix, utilizando React como ferramenta principal.
-
-Estudei no instituto técnico de barueri, Brasílio Flores de azevedo, ensino médio com curso técnico de informática integrado.
-
-Sou apaixonado pelo front-end, principalmente quando utilizado o React e o Next.js, tenho o objetivo de crescer, me especializar e me tornar conhecido na área. E acredito que a melhor maneira de fazer isso é correndo atrás de conhecimento.
-                </article>
+                <article>{description}</article>
+                
             </div>
         );
 }
