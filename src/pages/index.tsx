@@ -1,5 +1,6 @@
 import React from 'react';
 import { ContactForm } from '../components/ContactForm';
+import { Projects } from '../components/Projects';
 import { Skills } from '../components/Skills';
 
 
@@ -12,7 +13,11 @@ export default function Home() {
             
             <Skills />
 
+            <Projects />
+
             <ContactForm />
+
+
         
         </div>
     );

@@ -16,6 +16,7 @@
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.2.0",
     "react-slick": "^0.28.1",
     "react-tsparticles": "^1.27.0",
