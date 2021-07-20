@@ -53,6 +53,7 @@ const Container =  styled.div`
 
         button {
             width: 100%;
+            border: none;
             height: 3rem;
             border-bottom-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
