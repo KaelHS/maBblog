@@ -1,6 +1,18 @@
 .title {
     font-size: 3rem;
-    margin-bottom: 4rem;
+    margin: 4rem 0;
     color: var(--cyan-500);
 
 }
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    color: #fff;
+    margin: 16px;
+    font-size: 4em
+  
+  }

@@ -1,57 +1,63 @@
+.gridSection {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    div {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        text-align: center;
+        border: solid 1px var(--gray-900);
+        background: var(--gray-900);
+        margin: 0 1.25rem;
+        border-radius: 0.3rem;
+        justify-content: left;
+        margin-bottom: 1.25rem;
+
+        p {
+            font-size: 1.5rem;
+            font-family: monospace;
+            color: var(--white);
+            line-height: 3rem;
+            margin-left: 1.25rem;
+
+        }
+
+        &:hover {
+            text-shadow: 0 0 0.8rem var(--blue-500);
+            border: 1px solid var(--blue-500);
+            transition: 0.5s;
+            -webkit-transform: scale(1.1);
+            -webkit-transition: 0.5s;
+            -ms-transform: scale(0.8);
+            transform: scale(1.1);
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .gridSection{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (max-width: 720px) {
+    .gridSection{
+        grid-template-columns: 1fr;
+    }
+}
+
 .container {
 
-    margin: 0 auto;
+    margin: 0 auto 4rem;
 
     h1 {
         font-size: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         color: var(--cyan-500);
     }
 
-    .skillContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-bottom: 4.7rem;
-
-        li {
-            display: flex;
-            padding: 0.5rem;
-            text-align: center;
-            border: solid 1px var(--gray-900);
-            background: var(--gray-900);
-            margin: 0 1.25rem;
-            border-radius: 0.3rem;
-            justify-content: left;
-            
-            & + li {
-                margin-top: 1.25rem;
-            }
-            
-            img {
-                display: inline;
-                margin: 0 2.5rem 0 1rem;
-            }
-            
-            h2 {
-                margin: 0 0 0 1.5rem;
-                font-family: monospace;
-                display: inline;
-                color: var(--white);
-                line-height: 4rem;
-                font-size: 2rem;
-                
-            }
-
-            &:hover {
-                text-shadow: 0 0 0.8rem var(--blue-500);
-                border: 1px solid var(--blue-500);
-                transition: 0.5s;
-                -webkit-transform: scale(1.1);
-                -webkit-transition: 0.5s;
-                -ms-transform: scale(0.8);
-                transform: scale(1.1);
-                cursor: default;
-            }
-        }
-    }
 }

@@ -1,20 +1,34 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router'
 import axios from "axios";
 import withReactContent from 'sweetalert2-react-content';
 import Swal from 'sweetalert2';
 import Link from 'next/link';
 
+
 import { FiMail, FiMapPin, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { FaGithub } from "react-icons/fa";
 
-
 import styles from './styles.module.scss';
+
+
+type ContactFormData = {
+    cname: string;
+    cemail: string;
+    message: string;
+}
+
+
 
 export function ContactForm() {
 
     const [ cname, setCname ] = useState('');
     const [ cemail, setCemail ] = useState('');
     const [ message, setMessage ] = useState('');
+
+
+    const router = useRouter();
+
 
     const customAlert = withReactContent(Swal);
 
@@ -39,7 +53,10 @@ export function ContactForm() {
             timer: 2500,
             })
 
+
+            router.push('/');
     }
+      
     return(
         <>
         <div className={styles.contactContainer}>
@@ -84,7 +101,7 @@ export function ContactForm() {
             </div>
         </div>
         <div className={styles.formContainer}>
-                <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Nome</label>
                     <input 
                         type="text" 

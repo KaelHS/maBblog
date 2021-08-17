@@ -1,7 +1,7 @@
 .bar {
     width: 400px;
     height: 100vh;
-    padding: 3rem; 
+    padding: 1rem 2rem; 
     display:flex;
     flex-direction: column;
     background: var(--gray-900);
@@ -10,24 +10,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 3rem;
+        margin-bottom: 1.75rem;
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
     }
 
     section {
         padding: 0 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.25 rem;
         text-align: center;
+        margin-bottom: 1rem;
 
-        &::before {
-            content:'';
-            height: 1px;
-            width: 100%;
-            background: var(--gray-300);
+        p {
+            font-size: 1rem;
+            color: var(--blue-500);
+            margin-bottom: 0.5rem;
         }
     }
 
@@ -41,7 +41,13 @@
     article{
         margin-top: 2rem;
         overflow-y: scroll;
-        font-size: 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.25rem;
+
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
     }
 
 }

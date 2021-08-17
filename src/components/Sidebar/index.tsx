@@ -11,7 +11,7 @@ export const Sidebar = () => {
         return(
             <div className={styles.bar}>
                 <div className={styles.sideHeader}>
-                    <Image src="/me.png" width={200} height={200}  />
+                    <Image src="/me.png" width={180} height={180}  />
                     <h1>Kael Silva</h1>
                 </div>
                 <section>
@@ -21,17 +21,17 @@ export const Sidebar = () => {
                     <div className={styles.contactIcons}>
                         <Link href="https://www.linkedin.com/in/kaelhsilva/">
                             <a target="_blank">
-                                <FiLinkedin size="2.25rem"/>
+                                <FiLinkedin size="2rem"/>
                             </a>
                         </Link>
                         <Link href="https://github.com/KaelHS">
                             <a target="_blank">
-                                <FaGithub size="2.25rem"/>
+                                <FaGithub size="2rem"/>
                             </a>
                         </Link>
                         <Link href="https://www.instagram.com/kael_hs/">
                             <a target="_blank">
-                                <FiInstagram size="2.25rem"/>
+                                <FiInstagram size="2rem"/>
                             </a>
                         </Link>
                     </div>
