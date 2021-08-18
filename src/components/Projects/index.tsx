@@ -27,11 +27,11 @@ export function Projects() {
                 </div>
                 <div className={styles.item}>
                   <Card 
-                    imgsrc="/projectImages/dtMoney.jpg" 
-                    repolink="https://github.com/KaelHS/dt-money" 
-                    title="DT Money" 
-                    description="Controle de gastos"
-                    appTechs={['Typescript, MirageJS, Styled-Components']}/>
+                    imgsrc="/projectImages/crypto-view.png" 
+                    repolink="https://github.com/KaelHS/cryptoView" 
+                    title="CryptoView" 
+                    description="Dashboard para cryptomoedas"
+                    appTechs={['Typescript, SASS, React Icons, Consumo de API externa']}/>
                 </div>
                 <div className={styles.item}>
                   <Card 
@@ -40,6 +40,14 @@ export function Projects() {
                     title="igNews" 
                     description="Assinatura de conteudo"
                     appTechs={['FaunaDB, Prismic CMS, Stripe, SASS, Typescript']}/>
+                </div>
+                <div className={styles.item}>
+                  <Card 
+                    imgsrc="/projectImages/dtMoney.jpg" 
+                    repolink="https://github.com/KaelHS/dt-money" 
+                    title="DT Money" 
+                    description="Controle de gastos"
+                    appTechs={['Typescript, MirageJS, Styled-Components']}/>
                 </div>
                 <div className={styles.item}>
                   <Card 
