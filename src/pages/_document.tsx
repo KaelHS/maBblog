@@ -7,6 +7,8 @@ export default class MyDocument extends Document {
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
             <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+            <title>Kael Silva - Portifólio </title>
           </Head>
           <body>
               <Main />
