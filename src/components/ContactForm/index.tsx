@@ -54,7 +54,11 @@ export function ContactForm() {
             })
 
 
-            router.push('/');
+            // router.push('/');
+            setCname('');
+            setCname('');
+            setMessage('');
+            window.scrollTo(0, 0);
     }
       
     return(
