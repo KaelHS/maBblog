@@ -21,8 +21,8 @@ export function Projects() {
                       <Card 
                         imgsrc="/projectImages/portifolio.png" 
                         repolink="https://github.com/KaelHS/maBblog" 
-                        title="Portifólio" 
-                        description="Portifolio"
+                        title="Portfólio" 
+                        description="Portfólio"
                         appTechs={['MongoDB/Mongoose, NodeJS, SASS, Typescript, SweetAlert']}/>
                 </div>
                 <div className={styles.item}>
