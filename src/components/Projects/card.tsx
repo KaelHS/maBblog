@@ -5,19 +5,21 @@ interface CardProps {
     imgsrc: string;
     repolink: string;
     title:string;
+    description: string;
+    appTechs: string[];
 }
 
-export function Card({imgsrc, repolink, title} : CardProps) {
+export function Card({imgsrc, repolink, title, description, appTechs} : CardProps) {
 
   return(
     <div className={styles.container}>
       <img src={imgsrc} alt="" />
             <h2>{title}</h2>
-            <p> Aplicação de Controle de Gastos</p>
+            <p>{description}</p>
             <ul>
-                <li>Typescript</li>
-                <li>Stripe</li>
-                <li>Prismic CMS</li>
+              { appTechs.map( (tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
             </ul>
             <Link href={repolink}>
                 <a target="_blank">

@@ -85,16 +85,26 @@ export function ContactForm() {
             <div className={styles.socialCards}>
                 <ul>
                     <li>
-                        <FiLinkedin size="2.5rem" color="var(--blue-500)"/>
-                        <p>LinkedIn</p>
+                        <Link href="https://www.linkedin.com/in/kaelhsilva/"><a> 
+                            <FiLinkedin size="2.5rem" color="var(--blue-500)"/>
+                            <p>LinkedIn</p>
+                        </a></Link>
                     </li>
                     <li>
-                        <FaGithub size="2.5rem" color="var(--blue-500)"/>
-                        <p>Github</p>
+                        <Link href="">
+                            <a>
+                                <FaGithub size="2.5rem" color="var(--blue-500)"/>
+                                <p>Github</p>
+                            </a>
+                        </Link>
                     </li>
                     <li>
-                        <FiInstagram size="2.5rem" color="var(--blue-500)"/>
-                        <p>Instagram</p>
+                        <Link href="">
+                            <a>
+                                <FiInstagram size="2.5rem" color="var(--blue-500)"/>
+                                <p>Instagram</p>
+                            </a>
+                            </Link>
                     </li>
                 </ul>
 

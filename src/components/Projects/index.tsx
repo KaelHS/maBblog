@@ -6,9 +6,6 @@ import styles from './styles.module.scss';
 
 export function Projects() {
 
-  const imgStrings = [
-    '/projectImages/dtMoney.jpg',
-  ]
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -20,9 +17,39 @@ export function Projects() {
         <>
         <h1 className={styles.title}>Projetos</h1>
             <Carousel isRTL={false} breakPoints={breakPoints}>
-                <div className={styles.item}><Card imgsrc="/projectImages/dtMoney.jpg" repolink="https://github.com/KaelHS/dt-money" title="DT Money"/></div>
-                <div className={styles.item}><Card imgsrc="/projectImages/igNews.jpg" repolink="https://github.com/KaelHS/ignews" title="ig News" /></div>
-                <div className={styles.item}><Card imgsrc="/projectImages/RocketShoes.jpg" repolink="https://github.com/KaelHS/desafioCarrinhoCompras" title="Rocket Shoes"/></div>
+                <div className={styles.item}>
+                      <Card 
+                        imgsrc="/projectImages/portifolio.png" 
+                        repolink="https://github.com/KaelHS/maBblog" 
+                        title="Portifólio" 
+                        description="Portifolio"
+                        appTechs={['MongoDB/Mongoose, NodeJS, SASS, Typescript, SweetAlert']}/>
+                </div>
+                <div className={styles.item}>
+                  <Card 
+                    imgsrc="/projectImages/dtMoney.jpg" 
+                    repolink="https://github.com/KaelHS/dt-money" 
+                    title="DT Money" 
+                    description="Controle de gastos"
+                    appTechs={['Typescript, MirageJS, Styled-Components']}/>
+                </div>
+                <div className={styles.item}>
+                  <Card 
+                    imgsrc="/projectImages/igNews.jpg" 
+                    repolink="https://github.com/KaelHS/ignews" 
+                    title="igNews" 
+                    description="Assinatura de conteudo"
+                    appTechs={['FaunaDB, Prismic CMS, Stripe, SASS, Typescript']}/>
+                </div>
+                <div className={styles.item}>
+                  <Card 
+                    imgsrc="/projectImages/RocketShoes.jpg" 
+                    repolink="https://github.com/KaelHS/desafioCarrinhoCompras" 
+                    title="Rocket Shoes" 
+                    description="e-commerce"
+                    appTechs={['Toastify, React Icons, React Router, Styled-Components']}/>
+                </div>
+
             </Carousel>
         </>
     )

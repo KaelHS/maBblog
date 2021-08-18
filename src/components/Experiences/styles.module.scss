@@ -1,5 +1,5 @@
 .mainContainer {
-    padding: 1rem;
+    padding: 4rem 1rem;
     h1 {
         font-size: 3rem;
         color: var(--cyan-500);
@@ -36,5 +36,26 @@
         }
 
 
+    }
+}
+
+@media(max-width: 980px) {
+    .jobContainer {
+        padding: 2rem 1rem;
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+
+       div {
+
+        margin-top: 1.25rem;
+
+        span {
+            width: 50px;
+        }
+       }
     }
 }
