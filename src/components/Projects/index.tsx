@@ -16,7 +16,7 @@ export function Projects() {
     return (
         <>
         <h1 className={styles.title}>Projetos</h1>
-            <Carousel isRTL={false} breakPoints={breakPoints}>
+            <Carousel isRTL={false} breakPoints={breakPoints} >
                 <div className={styles.item}>
                       <Card 
                         imgsrc="/projectImages/portifolio.png" 
