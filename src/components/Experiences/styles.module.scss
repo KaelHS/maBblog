@@ -6,11 +6,11 @@
     }
 
     .jobContainer {
-        margin-top: 4rem;
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
-        max-width:600px;
-        padding: 1rem;
+        max-width:700px;
+        padding: 1rem 2rem;
         border: 1px solid #fff ;
         border-radius: 0.25rem;
         background-color: var(--gray-850);
@@ -25,7 +25,13 @@
             margin-left: 1.25rem;
 
             h2 {
-                margin-bottom: 0.25rem;
+                margin-bottom: 0.5rem;
+
+                span {
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                    margin-left: 2rem;
+                }
             }
     
             p {

@@ -121,18 +121,21 @@ export function ContactForm() {
                         type="text" 
                         name="name"
                         value={cname} 
-                        onChange={ ({ target }) => setCname(target.value) } />
+                        onChange={ ({ target }) => setCname(target.value) }
+                        required />
                     <label htmlFor="email">Email</label>
                     <input 
                         type="email" 
                         name="email" 
                         value={cemail} 
-                        onChange={ ({ target }) => setCemail(target.value) } />
+                        onChange={ ({ target }) => setCemail(target.value) } 
+                        required/>
                     <label htmlFor="message">Mensagem</label>
                     <textarea 
                         name="message" 
                         value={message} 
-                        onChange={ ({ target }) => setMessage( target.value ) } />
+                        onChange={ ({ target }) => setMessage( target.value ) }
+                        required />
                     <button type="submit">Enviar</button>
                 </form>
             </div>
