@@ -70,7 +70,7 @@ export function ContactForm() {
                 <div className={styles.cardContactContainer}>
                     <div className={styles.cardContact}>
                         <FiMail size="1.5rem"/>
-                        <Link href="#">
+                        <Link href="mailto:kael_hs@hotmail.com?subject=Contato">
                             <a>
                                 <p>kael_hs@hotmail.com</p>
                             </a>
